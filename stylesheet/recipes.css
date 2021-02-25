@@ -1,0 +1,29 @@
+.char-board {
+    width: 75%;
+    margin-bottom: 3rem;
+}
+
+/* home page latest recipes */
+
+.home-recipe-container {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "home-recipe-1 home-recipe-2 home-recipe-3";
+}
+  
+.home-recipe-1 { 
+    grid-area: home-recipe-1; 
+}
+  
+.home-recipe-2 { 
+    grid-area: home-recipe-2; 
+}
+  
+.home-recipe-3 { 
+    grid-area: home-recipe-3; 
+}
+  

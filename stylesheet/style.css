@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    position: sticky;
+    /* background-image: url('../assets/background\ image.jpg'); */
+    background-repeat: none;
+    background-size: cover;
+    padding-top: 1rem;
+    background-color: lightskyblue;
+    z-index: 2;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* header */
+
+header {
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    z-index: 5;
+    background-color: #ffffff;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    border-bottom: black solid 1px;
+}
+
+.guide {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.banner-menu {
+    position: absolute;
+    right: .5rem;
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+}
+
+.logo {
+    height: 2rem;
+    position: absolute;
+    left: 1rem;
+    margin-top: .5rem;
+}
+
+.header-social {
+    width: 1.75rem;
+}
+
+.nav-btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    color: black;
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* main */
+
+.jumbotron {
+    margin-top: 4rem;
+    position: sticky;
+    text-align: center;  
+    z-index: 3;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.title {
+    font-size: 5rem;
+    font-family: cursive;
+}
+
+.title-info {
+    margin-top: 3rem;
+    font-size: 1.75rem;
+}
+
+.content-container {
+    position: sticky;
+    text-align: center;
+    margin-bottom: 3rem;
+    z-index: 3;
+}
+
+.content-container:hover {
+    opacity: 1;
+}
+
+h2 {
+    padding: 3rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: lightskyblue;
+    padding-top: 3.5rem;
+}
+
+.footer-grid-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "admin-login jp-copyright";
+}
+
+.jp-copyright {
+    grid-area: jp-copyright;
+}
+
+.admin-login {
+    grid-area: admin-login;   
+}
+
+#admin-login-access {
+    color: white;
+}
+
+#admin-login-access:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.news-form {
+    margin-bottom: 3rem;
+}
+
+.news-sub {
+    font-size: 1.25rem;
+}
+
+.text-input {
+    width: 50%;
+    height: 3rem;
+    font-size: 1.5rem;
+    outline-color: red;
+}
+
+.news-form-btn {
+    height: 3rem;
+    font-size: 1.5rem; 
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.news-form-btn:focus {
+    outline-color: red;
+} 
+
+#before-foot {
+    margin-bottom: 0rem;
+}
+

@@ -1,0 +1,24 @@
+/* home page latest review */
+
+.home-review-container {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "home-review-1 home-review-2 home-review-3";
+}
+  
+.home-review-1 { 
+    grid-area: home-review-1; 
+}
+  
+.home-review-2 { 
+    grid-area: home-review-2; 
+}
+  
+.home-review-3 { 
+    grid-area: home-review-3; 
+}
+  

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../stylesheet/style.css">
+    <link rel="stylesheet" href="../../stylesheet/admin.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="../../vue.js"defer></script>
+    <script src="../../app.js"></script>
+
+    <title>Admin | Manage Posts</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img class="logo" src="../../assets/logo.png" alt="seg">
+        </div>
+        <nav class="banner-menu">
+            <ul class="guide">
+                <li><a class="nav-btn" href="index.html">Posts</a></li>
+                <li><a class="nav-btn" href="../recipes/index.html">Recipes</a></li>
+                <li><a class="nav-btn" href="../restaurants/index.html">Restaurants</a></li>    
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jumbotron bg-white">
+            <h1 class="title">Admin<h1>
+            <p class="title-info">Manage Your Blog Posts</p>
+        </div>
+
+        <div class="content-container bg-white">
+            <div class="admin-wrapper">
+                
+                <div class="admin-content">
+                    <div class="button-group">
+                        <a href="create.html"><button class="news-form-btn">Add Post</button></a>
+                    </div>
+
+                    
+                    <table> <!-- class="table table-striped table-bordered table-sm"> -->
+                        <thead>
+                          <tr>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th colspan="3">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class=>Second Post</td>
+                            <td>02/23/2021</td>
+                            <td><a href="#" class="edit">Edit</a></td>
+                            <td><a href="#" class="delete">Delete</a></td>
+                            <td><a href="#" class="publish">Publish</a></td>
+                          </tr>
+                          <tr>
+                            <td>First Post</td>
+                            <td>02/02/2021</td>
+                            <td><a href="#" class="edit">Edit</a></td>
+                            <td><a href="#" class="delete">Delete</a></td>
+                            <td><a href="#" class="publish">Publish</a></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        
+    </main> 
+
+    <footer>
+        <ul class="footer-grid-container">
+            <li>&copy; John Parrett</li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<!-- blog post layout
+
+title
+date
+body
+
+-->

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="referrer" content="origin-when-cross-origin">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/index.css">
+    <link rel="stylesheet" href="stylesheet/recipes.css">
+    <link rel="stylesheet" href="stylesheet/reviews.css">
+    <link rel="stylesheet" href="stylesheet/blog.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="vue.js" defer></script>
+    <script src="app.js"></script>
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img class="logo" src="assets/logo.png" alt="seg">
+        </div>
+        <nav class="banner-menu">
+            <ul class="guide">
+                <a class="nav-btn" href="https://instagram.com" target="_blank"><li><img class="header-social" src="assets/icons8-instagram-50.png"></li></a>
+                <a class="nav-btn" href="https://yelp.com" target="_blank"><li><img class="header-social" src="assets/icons8-yelp-50.png"></li></a>
+                <a class="nav-btn" href="index.html"><li>Home</li></a>
+                <a class="nav-btn" href="posts.html"><li>Blog</li></a>
+                <a class="nav-btn" href="recipes.html"><li>Recipes</li></a>
+                <a class="nav-btn" href="restaurants.html"><li>Restaurants</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="jumbotron bg-white">
+            <h1 class="title">Welcome</h1>
+            <p class="title-info">Visit this Website for Vegetarian lifestyle posts,<br> Recipes and Restaurant Reviews!</p>
+        </div>
+
+        <div class="content-container bg-white">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="content-container bg-white">
+            <h2>Latest Entry</h2>
+            
+            <div class="home-blog-container"  id="latest-blog">
+                <div class="home-blog-1">
+                    <!-- for vue: title, date, description, first x number of characters start of blog -->
+                    <h3>{{ title[0] }}</h3>
+                    <p>{{ date[0] }}</p>
+                    <h4>{{ description[0] }}</h4>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="blog.html"><span class="see-more-btn">See All</span></a>
+            </div>
+        </div>
+
+        <div class="content-container bg-white" id="recipes">
+            <h2>Most Recent Recipes</h2>
+            <div class="home-recipe-container">
+                <div class="home-recipe-1">
+                    <h3>{{ title[0] }}</h3>
+                </div>
+                <div class="home-recipe-2">
+                    <h3>{{ title[1] }}</h3>
+                </div>
+                <div class="home-recipe-3">
+                    <h3>{{ title[2] }}</h3>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="recipes.html"><span class="see-more-btn">See All</span></a>
+            </div>
+
+        </div>
+
+        <div class="content-container bg-white" id="review">
+            <h2>Latest Review</h2>
+
+            <div class="home-review-container">
+                <div class="home-review-1">
+                    <h3>{{ title[0] }}</h3>
+                </div>
+                <div class="home-review-2">
+                    <h3>{{ title[1] }}</h3>
+                </div>
+                <div class="home-review-3">
+                    <h3>{{ title[2] }}</h3>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="reviews.html"><span class="see-more-btn">See All</span></a>
+            </div>
+
+        </div>
+
+        <div id="before-foot" class="content-container bg-light">
+            <form class="news-form" action="#">
+                <h2>Receive Updates once a Week!</h2>
+                <p class="news-sub">Subscribe to our Newsletter!</p>
+                
+                <input class="text-input" type="email" name="newsletter" placeholder="Enter your Email...">
+                <input class="news-form-btn" type="submit" value="Subscribe">
+            </form>
+        </div>
+    
+        
+    </main>
+    <footer>
+        <ul class="footer-grid-container">
+            <div class="jp-copyright">
+                <li>&copy; John Parrett</li>
+            </div>
+            <div class="admin-login">
+                <li><a id="admin-login-access" href="#">Admin Login</a></li>
+            </div>
+        </ul>
+    </footer>
+</body>
+</html>

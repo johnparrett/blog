@@ -1,0 +1,73 @@
+.admin-wrapper {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.admin-content {
+    flex: 8;
+    height: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.button-group {
+    padding-bottom: 3rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center; 
+    border: 1px solid black;
+}
+
+.edit {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+.publish {
+    color: blue;
+}
+
+.edit:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.delete:hover {
+    color: red;
+    text-decoration: underline;
+}
+.publish:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.text-area-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 2rem;
+}
+
+.admin-form-date {
+    font-size: 1.1rem;
+    outline-color: red;
+}
+
+.photo-input-container {
+    margin-left: 8rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
